@@ -1,13 +1,67 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #b6badd;
-  color: #212121;
-  line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(233, 228, 255);
+    color: #212121;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    margin: 20px auto 20px auto;
+    font: inherit;
+}
+
+.search-form {
+    padding: 20px;
+    background-color: rgb(134, 110, 240);
+    display: block;
+}
+
+.search-form button,
+input {
+    font: inherit;
+}
+
+.gallery {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img {
+    width: 400px;
+}
+
+.photo-card {
+    margin: 10px;
+    max-width: 400px;
+    border: solid 1px #adadad;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding: 10px;
+}
+
+.info-item {
+    margin: 0 10px 0 0;
 }
