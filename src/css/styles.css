@@ -47,11 +47,12 @@ input {
 
 img {
     width: 400px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .photo-card {
     margin: 10px;
-    max-width: 400px;
     border: solid 1px #adadad;
     background-color: #fff;
     display: flex;

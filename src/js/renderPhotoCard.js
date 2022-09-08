@@ -10,11 +10,6 @@ import { gallery, btnLoadMore } from './ref';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-// let lightbox = new SimpleLightbox('.photo-card a', {
-//     captionsData: 'alt',
-//     captionDelay: 250,
-// });
-
 export function renderPhotoCard(data) {
     const results = data.hits;
     const stringTag = results
@@ -49,13 +44,10 @@ export function renderPhotoCard(data) {
         )
         .join('');
 
-    // gallery.innerHTML = '';
     gallery.insertAdjacentHTML('beforeend', stringTag);
+
     new SimpleLightbox('.photo-card a', {
         captionsData: 'alt',
         captionDelay: 250,
     });
-
-    btnLoadMore.classList.remove('is-hidden');
-    btnLoadMore.classList.add('visible');
 }
