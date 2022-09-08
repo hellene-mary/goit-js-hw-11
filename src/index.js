@@ -18,6 +18,8 @@ async function onSearch(evt) {
         if (!searchQuery) {
             Notify.Notify.warning('Please type something to search.');
 
+            isHiddenBtnLoadMore();
+
             return;
         }
 
